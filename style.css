@@ -1,0 +1,156 @@
+/* Page Background and Main Text Color */
+body {
+    background-color: #fffdfa;
+    color: #1a1a1a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    padding: 0;
+}
+
+/* Headings Styling */
+h1 {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 2.4rem;
+    color: #8b0000;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #5a0000;
+    margin-top: 25px;
+}
+
+/* Image Container and Border */
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    border-radius: 10px;
+    border: 3px solid #ffbf00;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff;
+}
+
+th, td {
+    padding: 12px 16px;
+    border: 1px solid #e0e0e0;
+    text-align: left;
+}
+
+th {
+    background-color: #8b0000;
+    color: #ffffff;
+}
+
+/* Button Styling (Color, Text & Rounded Corners) */
+.button-container {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #8b0000;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 26px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #660000;
+}
+/* Page Background and Main Layout */
+body {
+    background-color: #fffdfa;
+    color: #1a1a1a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers all direct children horizontally */
+}
+
+/* Headings */
+h1 {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 2.4rem;
+    color: #8b0000;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #5a0000;
+    margin-top: 25px;
+    text-align: center;
+}
+
+/* Image Styling */
+.image-container {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.image-container img {
+    border-radius: 10px;
+    border: 3px solid #ffbf00;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Table Styling (Centered) */
+table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    margin: 20px auto; /* Centers the table */
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Optional subtle shadow */
+}
+
+th, td {
+    padding: 12px 16px;
+    border: 1px solid #e0e0e0;
+    text-align: left;
+}
+
+th {
+    background-color: #8b0000;
+    color: #ffffff;
+}
+
+/* Button Container & Button (Centered) */
+.button-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+button {
+    background-color: #8b0000;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #660000;
+}
