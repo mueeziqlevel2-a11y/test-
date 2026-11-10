@@ -1,77 +1,6 @@
-/* Page Background and Main Text Color */
-body {
-    background-color: #fffdfa;
-    color: #1a1a1a;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 20px;
-    padding: 0;
-}
-
-/* Headings Styling */
-h1 {
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    font-size: 2.4rem;
-    color: #8b0000;
-    text-align: center;
-}
-
-h2 {
-    font-size: 1.8rem;
-    color: #5a0000;
-    margin-top: 25px;
-}
-
-/* Image Container and Border */
-.image-container {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.image-container img {
-    border-radius: 10px;
-    border: 3px solid #ffbf00;
-}
-
-/* Table Styling */
-table {
-    width: 100%;
-    max-width: 600px;
-    border-collapse: collapse;
-    margin: 20px 0;
-    background-color: #ffffff;
-}
-
-th, td {
-    padding: 12px 16px;
-    border: 1px solid #e0e0e0;
-    text-align: left;
-}
-
-th {
-    background-color: #8b0000;
-    color: #ffffff;
-}
-
-/* Button Styling (Color, Text & Rounded Corners) */
-.button-container {
-    margin-top: 20px;
-}
-
-button {
-    background-color: #8b0000;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 12px 26px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #660000;
-}
-/* Page Background and Main Layout */
+/* =========================================================
+Mueez Ahmed Malik, 26i-3094-B
+   ========================================================= */
 body {
     background-color: #fffdfa;
     color: #1a1a1a;
@@ -80,10 +9,15 @@ body {
     padding: 30px 20px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers all direct children horizontally */
+    align-items: center; /* Horizontally centers content */
 }
 
-/* Headings */
+/* Header & Navigation Styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 h1 {
     font-family: 'Trebuchet MS', Arial, sans-serif;
     font-size: 2.4rem;
@@ -94,12 +28,33 @@ h1 {
 
 h2 {
     font-size: 1.8rem;
-    color: #5a0000;
+    color: #8b0000;
     margin-top: 25px;
     text-align: center;
 }
 
-/* Image Styling */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #8b0000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0 10px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover, 
+nav a.active {
+    background-color: #ffbf00;
+    color: #8b0000;
+}
+
+/* Image Containers & Borders */
 .image-container {
     text-align: center;
     margin: 15px 0;
@@ -112,14 +67,14 @@ h2 {
     height: auto;
 }
 
-/* Table Styling (Centered) */
+/* Table Styling */
 table {
     width: 100%;
     max-width: 600px;
     border-collapse: collapse;
-    margin: 20px auto; /* Centers the table */
+    margin: 20px auto;
     background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Optional subtle shadow */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 th, td {
@@ -130,16 +85,17 @@ th, td {
 
 th {
     background-color: #8b0000;
-    color: #ffffff;
+    color: #fffdfa;
 }
 
-/* Button Container & Button (Centered) */
+/* Buttons & Interactive Elements */
 .button-container {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
-button {
+button, 
+.submit-btn {
     background-color: #8b0000;
     color: #ffffff;
     font-size: 16px;
@@ -151,6 +107,95 @@ button {
     transition: background-color 0.2s ease;
 }
 
-button:hover {
+button:hover, 
+.submit-btn:hover {
     background-color: #660000;
+}
+
+/* Gallery Grid Layout (For gallery.html) */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0;
+}
+
+.gallery-card {
+    background-color: #ffffff;
+    border: 2px solid #ffbf00;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(139, 0, 0, 0.2);
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.caption {
+    padding: 10px;
+    font-weight: bold;
+    color: #8b0000;
+    font-size: 1.05rem;
+    background-color: #fffdfa;
+    border-top: 1px solid #ffbf00;
+}
+
+/* Forms Styling (For order.html) */
+form {
+    background-color: #ffffff;
+    border: 2px solid #ffbf00;
+    padding: 25px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-top: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #8b0000;
+    margin-bottom: 5px;
+}
+
+input, 
+select, 
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 40px;
+    padding: 15px 0;
+    text-align: center;
+    border-top: 2px solid #ffbf00;
+    color: #8b0000;
+    font-size: 0.9rem;
+    font-weight: 500;
+    width: 100%;
+    max-width: 600px;
 }

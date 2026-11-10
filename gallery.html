@@ -1,0 +1,76 @@
+<!-- Name: Mueez Ahmed Malik | Roll Number: i263094 | Section: SE/B -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desi Dhaba & Chai Spot - Food Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav style="text-align: center; margin-bottom: 20px;">
+        <a href="index.html" style="margin: 0 15px; color: #8b0000; font-weight: bold; text-decoration: none;">Home</a>
+        <a href="menu.html" style="margin: 0 15px; color: #8b0000; font-weight: bold; text-decoration: none;">Menu</a>
+        <a href="gallery.html" style="margin: 0 15px; color: #8b0000; font-weight: bold; text-decoration: none;">Gallery</a>
+    </nav>
+
+    <!-- Main Page Heading -->
+    <h1>Desi Dhaba & Chai Spot</h1>
+    
+    <h2>Our Food Gallery</h2>
+
+    <!-- 6-Image Grid Container -->
+    <div class="gallery-grid">
+        <div class="gallery-card">
+            <img src="images/doodh_patti.jpg" alt="Doodh Patti Chai">
+            <div class="caption">Doodh Patti Chai</div>
+        </div>
+
+        <div class="gallery-card">
+            <img src="images/aloo_paratha.jpg" alt="Aloo Paratha">
+            <div class="caption">Aloo Paratha</div>
+        </div>
+
+        <div class="gallery-card">
+            <img src="images/kashmiri_chai.jpg" alt="Kashmiri Chai">
+            <div class="caption">Kashmiri Chai</div>
+        </div>
+
+        <div class="gallery-card">
+            <img src="images/chicken_karahi.jpg" alt="Chicken Karahi">
+            <div class="caption">Chicken Karahi</div>
+        </div>
+
+        <div class="gallery-card">
+            <img src="images/malai_boti.jpg" alt="Chicken Malai Boti">
+            <div class="caption">Chicken Malai Boti</div>
+        </div>
+
+        <div class="gallery-card">
+            <img src="images/halwa_puri.jpg" alt="Halwa Puri Thali">
+            <div class="caption">Halwa Puri Thali</div>
+        </div>
+    </div>
+
+    <!-- Action Button -->
+    <div class="button-container">
+        <button onclick="showSpecialOffer()">View Special Deals</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Desi Dhaba & Chai Spot. All rights reserved. | Developed by Mueez Ahmed Malik (i263094, SE/B)</p>
+    </footer>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        function showSpecialOffer() {
+            console.log("Special offer button clicked in gallery.");
+            window.alert("Dhaba Special Deal: Order any 2 Parathas and get 1 Doodh Patti Chai free!");
+        }
+    </script>
+
+</body>
+</html>

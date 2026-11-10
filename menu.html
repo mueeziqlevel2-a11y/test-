@@ -1,0 +1,116 @@
+<!-- Name: Mueez Ahmed Malik | Roll Number: i263094 | Section: SE/B -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desi Dhaba & Chai Spot - Full Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav style="text-align: center; margin-bottom: 20px;">
+        <a href="index.html" style="margin: 0 15px; color: #8b0000; font-weight: bold; text-decoration: none;">Home</a>
+        <a href="menu.html" style="margin: 0 15px; color: #8b0000; font-weight: bold; text-decoration: none;">Menu</a>
+        <a href="gallery.html" style="margin: 0 15px; color: #8b0000; font-weight: bold; text-decoration: none;">Gallery</a>
+    </nav>
+
+    <!-- Main Page Heading -->
+    <h1>Desi Dhaba & Chai Spot</h1>
+
+    <h2>Our Full Menu</h2>
+
+    <!-- Comprehensive Menu Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Item Name</th>
+                <th>Price (PKR)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Breakfast Category -->
+            <tr>
+                <td rowspan="3"><strong>Breakfast</strong></td>
+                <td>Aloo Paratha</td>
+                <td>220</td>
+            </tr>
+            <tr>
+                <td>Lachha Paratha with Anda Fry</td>
+                <td>180</td>
+            </tr>
+            <tr>
+                <td>Halwa Puri Thali (2 Puris)</td>
+                <td>250</td>
+            </tr>
+
+            <!-- Karahi & Handi Category -->
+            <tr>
+                <td rowspan="3"><strong>Karahi & Handi</strong></td>
+                <td>Chicken Karahi (Half / Full)</td>
+                <td>950 / 1800</td>
+            </tr>
+            <tr>
+                <td>Mutton Makhni Handi</td>
+                <td>1450</td>
+            </tr>
+            <tr>
+                <td>Daal Fry Tarka</td>
+                <td>320</td>
+            </tr>
+
+            <!-- BBQ Category -->
+            <tr>
+                <td rowspan="3"><strong>BBQ</strong></td>
+                <td>Chicken Malai Boti (8 Pcs)</td>
+                <td>680</td>
+            </tr>
+            <tr>
+                <td>Beef Seekh Kebab (4 Pcs)</td>
+                <td>580</td>
+            </tr>
+            <tr>
+                <td>Chicken Tikka Chest/Leg</td>
+                <td>380</td>
+            </tr>
+
+            <!-- Beverages Category -->
+            <tr>
+                <td rowspan="3"><strong>Beverages</strong></td>
+                <td>Doodh Patti Chai</td>
+                <td>140</td>
+            </tr>
+            <tr>
+                <td>Special Kashmiri Chai</td>
+                <td>180</td>
+            </tr>
+            <tr>
+                <td>Meethi / Namkeen Lassi</td>
+                <td>200</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Order Action Button -->
+    <div class="button-container">
+        <button onclick="handleMenuOrder()">Place Menu Order</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Desi Dhaba & Chai Spot. All rights reserved. | Developed by Mueez Ahmed Malik (i263094, SE/B)</p>
+    </footer>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        function handleMenuOrder() {
+            console.log("Menu page order button clicked.");
+            window.alert("Redirecting to order placement! Please choose your items on the order page.");
+            window.location.href = "index.html#order";
+        }
+    </script>
+
+</body>
+</html>
